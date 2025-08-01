@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoaib Akhtar Alam | Data Analyst</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo"
+            ><span><i class="fab fa-node-js"></i> Shoaib</span></a
+          >
+          <ul class="nav-links">
+            <li>
+              <a href="#home"><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#resume"
+                ><i class="fa-solid fa-laptop-code"></i> Resume</a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-comments"></i> Contact</a
+              >
+            </li>
+          </ul>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Hello, It's Me</h2>
+            <h1 class="hero-title"><span>Shoaib Akhtar Alam</span></h1>
+            <h2>
+              And I'm a <br>
+              <span class="hero-subtitle"
+                ><span id="typing-animation"></span><span class="cursor"></span
+              ></span>
+            </h2>
+
+            <div class="cta-buttons">
+              <a href="#contact" class="btn primary">Let's Connect</a>
+              <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="Images/profile.jpg" alt="Shoaib Akhtar Alam" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-bg-text="ABOUT">
+          <h2>About Me</h2>
+          <p>
+            Final-year Computer Science student passionate about data analysis,
+            coding, and solving real-world problems.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="Images/second_profile.jpg" alt="Developer Illustration" />
+          </div>
+          <div class="about-content">
+            <h3>I'm Shoaib Akhtar Alam</h3>
+            <p>
+              I'm a final-year Computer Science student who enjoys working with
+              data, coding at night, and solving real-life problems. I focus on
+              creating data-based solutions and always like learning new tools.
+              I’m also into sci-fi, trying out new tech, and keeping up with
+              data trends.
+            </p>
+
+            <div class="row">
+              <div class="tab-titles padd-15" role="tablist">
+                <button
+                  class="tab-links active-link"
+                  onclick="opentab('personal', event)"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="personal"
+                >
+                  <strong>Personal Details</strong>
+                </button>
+                <button
+                  class="tab-links"
+                  onclick="opentab('education', event)"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="education"
+                >
+                  <strong>Education</strong>
+                </button>
+                <button
+                  class="tab-links"
+                  onclick="opentab('tech-stack', event)"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="tech-stack"
+                >
+                  <strong>Tech Stack</strong>
+                </button>
+              </div>
+
+              <div
+                class="tab-contents active-tab"
+                id="personal"
+                role="tabpanel"
+                aria-labelledby="personal-tab"
+              >
+                <div class="personal-details">
+                  <p><strong>Date of Birth: </strong>06 March 2003</p>
+                  <p><strong>Website: </strong>www.domain.com</p>
+                  <p><strong>Degree: </strong>Computer Science</p>
+                  <p><strong>Email: </strong>akhtr.shoaib11@gmail.com</p>
+                  <p><strong>City: </strong>Coimbatore</p>
+                  <p><strong>Phone: </strong>+91 87092 63765</p>
+                </div>
+              </div>
+
+              <div
+                class="tab-contents"
+                id="education"
+                role="tabpanel"
+                aria-labelledby="education-tab"
+              >
+                <div class="timeline-item">
+                  <p class="timeline-date">
+                    <i class="fa fa-calendar"></i> 2022 - Present
+                  </p>
+                  <p class="timeline-title">
+                    Bachelor in Computer Science(B.E)
+                  </p>
+                  <p>
+                    <strong>Institution:</strong> KPR Institute of Engineering
+                    and Technology
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <p class="timeline-date">
+                    <i class="fa fa-calendar"></i> 2018 - 2020
+                  </p>
+                  <p class="timeline-title">
+                    Higher Secondary School Certificate (HSC)
+                  </p>
+                  <p><strong>Institution:</strong> National Infotech College</p>
+                </div>
+                <div class="timeline-item">
+                  <p class="timeline-date">
+                    <i class="fa fa-calendar"></i> 2008 - 2018
+                  </p>
+                  <p class="timeline-title">
+                    Secondary Education Examination (SEE)
+                  </p>
+                  <p>
+                    <strong>Institution:</strong> Vidhya Sadan Secondary School
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="tab-contents"
+                id="tech-stack"
+                role="tabpanel"
+                aria-labelledby="tech-stack-tab"
+              >
+                <h4 class="tech-title">Unwavering Foundation:</h4>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <i class="fas fa-table"></i>
+                    <span>Excel</span>
+                  </div>
+                </div>
+
+                <h4 class="tech-title">Data Retrieval Expert:</h4>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                  </div>
+                </div>
+                <h4 class="tech-title">Business Intelligence Tools:</h4>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Power BI</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Tableau</span>
+                  </div>
+                </div>
+                <h4 class="tech-title">Coding Skills:</h4>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="fab fa-r-project"></i>
+                    <span>R</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="buttons">
+                <a
+                  href="https://drive.google.com/file/d/1j6UEKUAWhguFYeulOycM61kG1fo2Itgl/view?usp=sharing"
+                  class="btn primary"
+                  >Download CV</a
+                >
+                <a href="#contact" class="btn secondary">Hire Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="section-title" data-bg-text="RESUME">
+          <h2>Resume</h2>
+          <p>Showcasing certified expertise and practical skills through real-world, results-driven projects</p>
+        </div>
+        
+        <!-- skills Section -->
+        <div class="skills-section">
+          <div class="skills-title">
+            <h3>Skills & Expertise</h3>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>R</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Tools & Platforms</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+                <li>Jupyter Notebook</li>
+                <li>Google Colab</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Databases</h3>
+              <ul>
+                <li>SQL</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Libraries & Frameworks</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Matplotlib</li>
+                <li>Scikit-learn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="certifications-section">
+          <div class="certifications-title">
+            <h3>Certifications</h3>
+          </div>
+
+          <div class="certifications-grid">
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Visual Analytics with Tableau</h3>
+              <div class="certification-provider">UCDAVIS | Coursera</div>
+              <div class="certification-date">Issued: September 2023</div>
+              <a
+                href="https://drive.google.com/file/d/15VS2GvcSWyl1p3Bvjw1mTP8uQefxnWP0/view?usp=sharing"
+                class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>
+                Leveraging Federated Learning for Ensuring Privacy in Defence
+                BigDataAnalytics
+              </h3>
+              <div class="certification-provider">
+                KPRIET | Department of CSE
+              </div>
+              <div class="certification-date">Issued: May 2024</div>
+              <a
+                href="https://drive.google.com/file/d/1Vbd1KJW5c54o3EeX83_WFvQVrnMgZWQH/view?usp=sharing"
+                class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <h3>Data Visualization with Tableau Project</h3>
+              <div class="certification-provider">UCDAVIS | Coursera</div>
+              <div class="certification-date">Issued: September 2023</div>
+              <a
+                href="https://drive.google.com/file/d/15SK1R1LLhODWZVBnwn1rlLnDE7_8SzYc/view?usp=sharing"
+                class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Introduction to NoSQL Databases</h3>
+              <div class="certification-provider">IBM | Coursera</div>
+              <div class="certification-date">Issued: December 2022</div>
+              <a
+                href="https://drive.google.com/file/d/1VqvuDICXYjSVqwv0aRNlSNPslWT2nRTd/view?usp=sharing"
+                class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <h3>Crash Course on Python</h3>
+              <div class="certification-provider">Google | Coursera</div>
+              <div class="certification-date">Issued: October 2022</div>
+              <a
+                href="https://drive.google.com/file/d/15y0hg_MiOtzepSQt8r2o5E9PwKb809B5/view?usp=sharing"
+                class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+
+            <div class="certification-card">
+              <div class="certification-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>AWS Certified Data Analytics</h3>
+              <div class="certification-provider">Amazon Web Services</div>
+              <div class="certification-date">Issued: August 2022</div>
+              <a href="#" class="view-certificate"
+                >View Certificate <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title" data-bg-text="PROJECTS">
+          <h2>Featured Projects</h2>
+          <p>
+            Explore my data analysis projects showcasing my technical skills and
+            problem-solving abilities.
+          </p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80"
+                alt="Vrinda-Store-Data-Analysis-PowerBI-"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Vrinda Store Data Analysis</h3>
+              <p>
+                In this project we have analyzed and visualized Vinda-Store
+                sales, warehouse sales, inventory and customer retention rate
+                and most soled product.
+              </p>
+              <div class="project-tech">
+                <span>PowerBI</span>
+              </div>
+              <a
+                href="https://github.com/ShoaibAktharAlam/Vrinda-Store-Data-Analysis-PowerBI"
+                class="project-link"
+                >View Details <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Global_Restaurant_Locations-_Ratings-_Cuisines-_and_Services_Overview"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Global Restaurant Analysis</h3>
+              <p>
+                The project is about the Restaurant business, its rating,
+                location and cuisines. We have analyzed the global HORECA and
+                its rating and location and what is famous for in the country.
+              </p>
+              <div class="project-tech">
+                <span>Python, Numpy, Pandas, Matplotlib, Seaborn</span>
+              </div>
+              <a
+                href="https://github.com/ShoaibAktharAlam/Global_Restaurant_Locations-_Ratings-_Cuisines-_and_Services_Overview"
+                class="project-link"
+                >View Details <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="load_forecasting_electrical"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Electrical Load Forecasting</h3>
+              <p>
+                The project is related to electrical load forecasting. In the
+                project we have analyze and visualized data and forecasted the
+                future outcome
+              </p>
+              <div class="project-tech">
+                <span>Python, Numpy, Pandas, Matplotlib, Seaborn</span>
+              </div>
+              <a
+                href="https://github.com/ShoaibAktharAlam/load_forecasting_electrical"
+                class="project-link"
+                >View Details <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-section">
+        <div class="counter-container">
+          <div class="counter-box">
+            <span class="counter-number">10</span>
+            <span class="counter-text">Achievements</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number">10</span>
+            <span class="counter-text">Projects</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number">250</span>
+            <span class="counter-text">Cups of coffee</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number">8</span>
+            <span class="counter-text">Technical Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub CTA Section -->
+      <div class="github-cta">
+        <h2>More projects on <span>GitHub</span></h2>
+        <h4>I love to solve business problems & uncover hidden data stories</h4>
+        <a href="https://github.com/ShoaibAktharAlam" class="github-btn"
+          >VIEW MY GITHUB</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title" data-bg-text="CONTACT">
+          <h2>Contact Me</h2>
+          <p>Let’s stay connected here!</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              Have a project in mind or just want to connect? I'm always open to
+              discussing new opportunities.
+            </p>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Coimbatore, Tamil Nadu - 641407</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>akhtr.shoaib11@gmail.com</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fa fa-phone"></i>
+                <div>
+                  <h4>Call Me On</h4>
+                  <p>+91 87092 63765</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="social-icons">
+          <h3>Find me on</h3>
+          <a
+            href="https://www.linkedin.com/in/shoaib-akhtar-alam/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ShoaibAktharAlam" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://x.com/ShoaibAkthrAlam" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/shoaiba_khtar/" target="_blank">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 <span> Shoaib Akhtar Alam</span>. All rights reserved</p>
+        <p>
+          Designed with <i class="fa fa-heart pulse"></i> by
+          <span> Shoaib Akhtar Alam</span>
+        </p>
+      </div>
+    </footer>
+
+    <div class="theme-toggle" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
