@@ -1089,6 +1089,7 @@
             }
 
             .nav-links a {
+                border-bottom: none !important;
                 font-size: 0; 
             }
 
@@ -1108,6 +1109,7 @@
                 cursor: pointer;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                 transition: color 0.3s ease;
+                text-decoration: none;
             }
 
             .nav-links i:hover{
