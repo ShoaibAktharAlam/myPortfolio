@@ -153,11 +153,8 @@
 
         .nav-links a.active {
             color: #fc8c05;
-        }
-
-        .nav-links a:hover {
-            transform: translateY(-4px);
-            color: #fc8c05;
+            font-weight: bold;
+            border-bottom: 2px solid #fc8c05;
         }
 
         .nav-links i {
@@ -1232,6 +1229,12 @@
 
         body.dark-theme .section-title::before{
             color: #1f1f1f;
+        }
+        
+        body.dark-theme .nav-links a.active {
+            color: #fc8c05;
+            border-bottom: 2px solid #fc8c05;
+            font-weight: bold;
         }
 
         body.dark-theme .navbar,
